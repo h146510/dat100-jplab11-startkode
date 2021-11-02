@@ -39,7 +39,7 @@ public class Bilde extends Tekst {
 
 	@Override
 	public String toString() {
-		return id + "\n" + bruker + "\n" + dato + "\n" + tekst + "\n" + url;
+		return id + bruker + dato + tekst + url;
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
