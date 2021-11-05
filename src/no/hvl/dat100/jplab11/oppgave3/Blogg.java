@@ -1,27 +1,38 @@
 package no.hvl.dat100.jplab11.oppgave3;
 
+import java.util.Arrays;
+
 import no.hvl.dat100.jplab11.common.TODO;
 import no.hvl.dat100.jplab11.oppgave1.*;
 
 public class Blogg {
+	
+	private int lengde;
+	private int antall;
+	private int id;
+	private int dato;
+	private String tekst;
+	private String url;
+	private Innlegg[] innleggtabell;
 
 	// TODO: objektvariable 
 
 	public Blogg() {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+	
 	}
 
 	public Blogg(int lengde) {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+	
+		this.lengde = lengde;
+		Innlegg[] innleggtabell = new Innlegg[lengde];
 	}
 
 	public int getAntall() {
-		return 0;
+		return this.antall;
 	}
 	
 	public Innlegg[] getSamling() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return innleggtabell;
 	}
 	
 	public int finnInnlegg(Innlegg innlegg) {
@@ -30,21 +41,29 @@ public class Blogg {
 	}
 
 	public boolean finnes(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
-	}
+		return false;
+}
 
-	public boolean ledigPlass() {
-		throw new UnsupportedOperationException(TODO.method());
+	public boolean ledigPlass() { 
 
 	}
 	
 	public boolean leggTil(Innlegg innlegg) {
-
-		throw new UnsupportedOperationException(TODO.method());
+		 {
+			
+		}
+		return true;
 	}
 	
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+//		"2\n" + 
+//				"TEKST\n1\nOle Olsen\n23-10\n0\nen tekst\n" + 
+//				"BILDE\n2\nOline Olsen\n24-10\n0\net bilde\nhttp://www.picture.com/oo.jpg\n";
+		return "2\n" +
+		
+		 "TEKST" + "\n" + id + "\n" + dato + "\n" + tekst + "\n" +
+		
+		 "BILDE" + "\n" + id + "\n" + dato + "\n" + tekst + "\n" + url + "\n";
 	}
 
 	// valgfrie oppgaver nedenfor

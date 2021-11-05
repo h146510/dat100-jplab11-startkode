@@ -4,28 +4,21 @@ import no.hvl.dat100.jplab11.common.TODO;
 
 public class Bilde extends Tekst {
 
-	private int id;
-	private String bruker;
-	private String dato;
-	private String tekst;
-	private int likes;
+//	private int id;
+//	private String bruker;
+//	private String dato;
+//	private String tekst;
+//	private int likes;
 	private String url;
 	// TODO - objekt variable
 	
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
-		this.id = id;
-		this.bruker = bruker;
-		this.dato = dato;
-		this.tekst = tekst;
+		super(id, bruker, dato, tekst);
 		this.url = url;
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		this.id = id;
-		this.bruker = bruker;
-		this.dato = dato;
-		this.likes = likes;
-		this.tekst = tekst;
+		super(id, bruker, dato, likes, tekst);
 		this.url = url;
 	}
 	
@@ -39,7 +32,8 @@ public class Bilde extends Tekst {
 
 	@Override
 	public String toString() {
-		return id + bruker + dato + tekst + url;
+//		"BILDE\n1\nOle Olsen\n23-10\n0\net bilde\nhttp://www.picture.com/oo.jpg\n"
+		return "BILDE" + "\n" + getId() + "\n" + getBruker() + "\n"+ getDato() + "\n" + getTekst() + "\n" + url + "\n";
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
