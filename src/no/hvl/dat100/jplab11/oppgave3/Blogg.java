@@ -84,6 +84,11 @@ public class Blogg {
 	
 	
 	public String toString() {
+		String svar = "2"+"\n";
+        for (int i = 0; i < nesteledige; i++) {
+            svar += innleggtabell[i].toString() + "";
+        }
+        return svar;
 		
 //		"2\n" + 
 //				"TEKST\n1\nOle Olsen\n23-10\n0\nen tekst\n" + 
@@ -95,8 +100,8 @@ public class Blogg {
 //		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10","et bilde","http://www.picture.com/oo.jpg");
 //		
 //		2\nTEKST\n1\nOle Olsen\n23-10\n0\nen tekst\nBILDE\n2\nOline Olsen\n24-10\n0\net bilde\nhttp://www.picture.com/oo.jpg\n
-//
-		return"2\n" + "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + tekst + "\n" + "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + tekst + "\n" + url + "\n";
+////
+//		return"2\n" + "TEKST" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + tekst + "\n" + "BILDE" + "\n" + id + "\n" + bruker + "\n" + dato + "\n" + tekst + "\n" + url + "\n";
 	}
 
 	// valgfrie oppgaver nedenfor
