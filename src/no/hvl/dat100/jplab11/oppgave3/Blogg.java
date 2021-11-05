@@ -24,7 +24,7 @@ public class Blogg {
 	public Blogg(int lengde) {
 	
 		this.lengde = lengde;
-		Innlegg[] innleggtabell = new Innlegg[lengde];
+		innleggtabell = new Innlegg[lengde];
 	}
 
 	public int getAntall() {
@@ -45,7 +45,13 @@ public class Blogg {
 }
 
 	public boolean ledigPlass() { 
-
+		  for (int i = 0; i < innleggtabell.length; i++) {
+	            if(innleggtabell[i] == null) {
+	                return true;
+	            }
+	            else
+	                i++;
+	        }return false;
 	}
 	
 	public boolean leggTil(Innlegg innlegg) {

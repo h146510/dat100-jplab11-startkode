@@ -33,7 +33,7 @@ public class Bilde extends Tekst {
 	@Override
 	public String toString() {
 //		"BILDE\n1\nOle Olsen\n23-10\n0\net bilde\nhttp://www.picture.com/oo.jpg\n"
-		return "BILDE" + "\n" + getId() + "\n" + getBruker() + "\n"+ getDato() + "\n" + getTekst() + "\n" + url + "\n";
+		return "BILDE" + "\n" + getId() + "\n" + getBruker() + "\n"+ getDato() + "\n" + getLikes() + "\n" + getTekst() + "\n" + url + "\n";
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
