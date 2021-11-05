@@ -18,7 +18,7 @@ public class Blogg {
 	// TODO: objektvariable 
 
 	public Blogg() {
-	
+		innleggtabell = new Innlegg[20];
 	}
 
 	public Blogg(int lengde) {
