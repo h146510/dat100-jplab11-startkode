@@ -10,11 +10,6 @@ import no.hvl.dat100.jplab11.oppgave2.Tekst;
 public class Blogg {
 	
 	private int lengde;
-	private int id;
-	private int dato;
-	private String tekst;
-	private String bruker;
-	private String url;
 	private Innlegg[] innleggtabell;
 	private int nesteledige;
 
