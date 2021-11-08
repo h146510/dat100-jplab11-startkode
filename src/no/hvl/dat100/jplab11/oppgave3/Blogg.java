@@ -10,6 +10,7 @@ import no.hvl.dat100.jplab11.oppgave2.Tekst;
 public class Blogg {
 	
 	private int lengde;
+//	test test harald push test
 	private Innlegg[] innleggtabell;
 	private int nesteledige;
 
